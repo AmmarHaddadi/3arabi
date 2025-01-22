@@ -36,7 +36,7 @@ const arb = {
 }
 
 // chars that modify previous value
-const modifiers = ['-', "'", 'h'];
+// const modifiers = ['-', "'", 'h'];
 
 function replaceCharacters(event) {
 	const input = event.target;
@@ -48,7 +48,7 @@ function replaceCharacters(event) {
 		let comb = inputValue[i-1] + inputValue[i];
 		// console.log(`${comb}`);
 		if (arb[comb]) {
-			replacement += arb[comb];
+			replacement = replacement.slice(0, -1) + arb[comb];
 		} else {
 			replacement += arb[inputValue[i]] || inputValue[i];
 		} 
