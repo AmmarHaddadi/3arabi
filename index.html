@@ -1,14 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-    	<meta charset="UTF-8">
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
-    	<title>3arabi</title>
-  		<!-- <link rel="stylesheet" href="style.css"> -->
-  	</head>
-  	<body>
-		<textarea placeholder="your text here" id="txt"></textarea>
-  	  	<script src="main.js"></script>
-  	</body>
+<html lang="ar" dir="rtl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=3.0">
+	<!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+	<title>3arabi</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<button id="toggleBtn">Arabic: ON</button>
+	<!-- <button id="clearBtn">Clear Text</button> -->
+	<!-- <button id="testMultiKeysBtn">Test Multi-Keys</button> -->
+	<textarea placeholder="your text here" id="txt"></textarea>
+	<script src="main.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			// Initialize the Arabic keyboard
+			const arabicKeyboard = new ArabicKeyboard('#txt', '#toggleBtn');
+		});
+	</script>
+</body>
+
 </html>

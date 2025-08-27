@@ -1,0 +1,23 @@
+textarea {
+  direction: rtl;
+  text-align: right;
+  background-color: #303030;
+  width: 100%;
+  height: 100%;
+  /* border-radius: 20px; */
+  /* Rounded corners */
+  border: 2px solid #d96b8a;
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 32px;
+  outline: none;
+  box-sizing: border-box;
+  color: #e0e0e0;
+}
+body {
+  /* background-color: #404040; */
+  background-color: #121212;
+  height: 98vh;
+  /* display: block; */
+  /* position: absolute; */
+}
